@@ -27,7 +27,7 @@ while True:
                     if msg.toType == 2:
                         may = client.getProfile().mid
                         if may in str(msg.contentMetadata) and 'MENTION' in str(msg.contentMetadata):
-                            pilih = ['Saya tertag :V','Saya tertag lagi :V']
+                            pilih = ['Aku tertag :V','Aku tertag lagi :V']
                             rslt = random.choice(pilih)
                             client.sendText(msg.to, str(rslt))
                         else:
@@ -47,9 +47,9 @@ while True:
                         if msg.toType == 2:
                             client.sendChatChecked(receiver, msg_id)
                             contact = client.getContact(sender)
-                            if text.lower() == '-me':
+                            if text.lower() == 'me':
                                 client.sendMessage(receiver, None, contentMetadata={'mid': sender}, contentType=13)
-                            elif text.lower() == '-speed':
+                            elif text.lower() == 'speed':
                                 start = time.time()
                                 client.sendText(receiver, "Testing..")
                                 elapsed_time = time.time() - start
@@ -70,7 +70,7 @@ while True:
                                     client.sendImageWithURL(receiver, a)
                                 except Exception as e:
                                     client.sendText(receiver, str(e))
-                            elif text.lower() == '-mention':
+                            elif text.lower() == 'mention':
                                 group = client.getGroup(msg.to)
                                 nama = [contact.mid for contact in group.members]
                                 nm1, nm2, nm3, nm4, nm5, jml = [], [], [], [], [], len(nama)
@@ -123,7 +123,7 @@ while True:
                                         nm5 += [nama[m]]
                                     client.mention(msg.to, nm5)             
                                 client.sendText(receiver, "Anggota member berjumlah:"+str(jml))
-                            elif text.lower() == '-ceksider':
+                            elif text.lower() == 'ceksider':
                                 try:
                                     del cctv['point'][msg.to]
                                     del cctv['sidermem'][msg.to]
