@@ -19,3 +19,25 @@ ceksider    = Mengecek CCTV <br>
 offread     = Tampilkan CCTV <br>
 <hr>
 source : linepy by https://github.com/fadhiilrachman/
+
+azmunaa:
+List Command Standart : 
+- me 
+- speed 
+- spic 
+- scover 
+- tagall 
+- ceksider 
+- offread 
+Required : - Termux (PlayStore) 
+Instalasi di termux : 
+- apt update && apt upgrade 
+- apt install python 
+- apt install git 
+- pip3 install rsa 
+- pip3 install requests 
+- pip3 install thrift 
+- git clone http://github.com/tigaaaa/simpleSB/ 
+Run on termux : 
+- cd simpleSB 
+- python sb.py
