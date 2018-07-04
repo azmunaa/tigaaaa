@@ -41,3 +41,6 @@ Instalasi di termux :
 Run on termux : 
 - cd simpleSB 
 - python sb.py
+
+// line 31
+                            rslt = random.choice(pilih)
