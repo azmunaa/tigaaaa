@@ -28,7 +28,7 @@ while True:
                         may = client.getProfile().mid
                         if may in str(msg.contentMetadata) and 'MENTION' in str(msg.contentMetadata):
                             pilih = ['Aku tertag :V','Aku tertag lagi :V']
-                            rslt = random.choice(pilih)
+
                             client.sendText(msg.to, str(rslt))
                         else:
                             pass
